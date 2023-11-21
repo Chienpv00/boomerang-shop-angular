@@ -5,10 +5,11 @@ export const appRoutes: Route[] = [
     {
         path: '',
         component: LayoutComponent,
-        // children: [
-        //     {
-        //         path: '',
-        //     }
-        // ],
+        children: [
+            {
+                path: '',
+                loadChildren: () => (import('home')).then((m) => m.HomeModule),
+            }
+        ],
     },
 ];

@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "home": ["libs/home/feature/src/index.ts"],
       "layout": ["libs/shell/ui/layout/src/index.ts"],
       "shell": ["libs/shell/feature/src/index.ts"]
     }
